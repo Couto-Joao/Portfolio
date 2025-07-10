@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --font-color: #FFFFFF;
+    --main-font: "Inter", sans-serif;
+    --2-bg-color: #272727;
+    --3-bg-color: #444444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    width: 90%;
+    margin: 2% 3%;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: var(--2-bg-color);
+}
+
+.botao-curriculo {
+    font-size: 18px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    padding: 1% 4%;
+    margin: 0 1%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+     0% { opacity: 1; }
+     50% { opacity: 0.75; }
+     100% { opacity: 1; }
+   }
+
+.nav-links {
+    display: flex;
+    margin: 0 1%;
+    gap: 4rem;
+}
+
+.nav-links a {
+    font-size: 18px;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 6% 5%;
+    width: 45%;
+    gap: 4rem;
+}
+
+.apresentacao {
+    font-size: 18px;
+}
+
+.titulo-nome {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.botao-contrate {
+    width: 25%;
+    font-family: var(--main-font);
+    font-size: 17px;
+    font-weight: medium;
+    color: var(--font-color);
+    background-color: var(--2-bg-color);
+    border: 1px solid var(--3-bg-color);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2% 4%;
+    transform: scale(1); 
+    transition: transform 0.2s ease; 
+}
+
+.botao-contrate:hover {
+  transform: scale(1.1); 
+}
