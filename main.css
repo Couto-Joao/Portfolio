@@ -17,10 +17,11 @@ body {
     font-family: var(--main-font);
     background-color: var(--bg-color);
     color: var(--font-color);
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .cabecalho {
@@ -70,9 +71,57 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    margin: 6% 5%;
-    width: 45%;
-    gap: 4rem;
+    margin: 4% 6%;
+    width: 90%;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.texto-apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex: 1;
+    max-width: 55%;
+}
+
+.container-logos {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.container-foto {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex: 0 0 auto;
+    margin-top: -3%;
+}
+
+.foto-perfil {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid var(--3-bg-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.icons {
+    width: 2rem;
+}
+
+.icons:hover {
+    filter: grayscale(100%) brightness(0.6);
 }
 
 .apresentacao {
@@ -85,10 +134,9 @@ body {
 }
 
 .botao-contrate {
-    width: 25%;
+    width: 30%;
     font-family: var(--main-font);
-    font-size: 17px;
-    font-weight: medium;
+    font-size: 19px;
     color: var(--font-color);
     background-color: var(--2-bg-color);
     border: 1px solid var(--3-bg-color);
@@ -102,3 +150,4 @@ body {
 .botao-contrate:hover {
   transform: scale(1.1); 
 }
+
