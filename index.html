@@ -10,23 +10,19 @@
     <header class="cabecalho">
         <a href="./assets/Currículo João Pedro G. Couto.pdf" target="_blank" class="botao-curriculo">Meu Currículo</a>
         <nav class="nav-links">
-            <a>Home</a>
-            <a>Sobre mim</a>
-            <a>Projetos</a>
-            <a>Contato</a>
+            <a class="links" href="#home">Home</a>
+            <a class="links" href="#sobre-mim">Sobre mim</a>
+            <a class="links">Projetos</a>
+            <a class="links">Contato</a>
         </nav>
     </header>
 
     <section class="container principal">
         <div class="texto-apresentacao">
             <h1 class="titulo-nome">JOÃO PEDRO GONÇALVES COUTO</h1>
-            <p class="apresentacao">Sou Analista e Desenvolvedor de Sistemas em formação, 
-                com paixão por criar soluções digitais que realmente fazem a diferença. 
-                Gosto de desenvolver ferramentas úteis, interfaces intuitivas e até jogos, 
-                sempre com foco em acessibilidade, responsividade e experiência do usuário.
-                Minha abordagem une criatividade e boas práticas de desenvolvimento, buscando entregar 
-                produtos funcionais, eficientes e inclusivos. Estou sempre em evolução, explorando novas 
-                tecnologias e aprimorando minhas habilidades tanto em projetos pessoais quanto profissionais.
+            <p class="apresentacao">Desenvolvedor de Software com foco em interfaces 
+                intuitivas, acessíveis e responsivas, aplicando boas práticas de usabilidade 
+                para garantir uma experiência do usuário fluida e eficiente.
             </p>
             <button type="button" class="botao-contrate">Me Contrate</button>
 
@@ -48,10 +44,10 @@
         </div>
     </section>
 
-    <section class="secao-consolidada">
+    <section class="segunda-secao">
         <!-- Seção "Sobre mim" (ex-secundario) -->
         <div class="sobre-mim-container">
-            <div class="sobre-mim sobre">
+            <div class="sobre-mim sobre" id="sobre-mim">
                 <h2 class="titulo-sobre-mim">Sobre mim</h2>
                 <p class="apresentacao">
                     Sou Analista e Desenvolvedor de Sistemas em formação pela FATEC Franca, 
@@ -74,16 +70,17 @@
             <div class="card sobre">
                 <h3 class="titulo">Formação</h3>
                 <ul class="lista-educacao">
-                    <li>Análise e Desenvolvimento de Sistemas Fatec Franca Dr. Thomaz Novelino (08/2024 - 07/2027)</li>
+                    <li>Análise e Desenvolvimento de Sistemas: Fatec Franca Dr. Thomaz Novelino (08/2024 - 07/2027)</li>
                 </ul>
             </div>
         
             <div class="card sobre">
                 <h4 class="titulo">Certificados e Cursos</h4>
                 <ul class="lista-educacao">
-                    <li>Formação: A partir do zero: iniciante em programação [Alura]</li>
-                    <li>Formação: A partir do zero: HTML e CSS para projetos web [Alura]</li>
-                    <li>Inglês: Avançado | TOEIC Certificate</li>
+                    <li>Formação: A partir do zero: iniciante em programação <a class="certificados" href="https://cursos.alura.com.br/formacao-programacao" target="_blank">[Alura]</a></li>
+                    <li>Formação: A partir do zero: HTML e CSS para projetos web <a class="certificados" href="https://cursos.alura.com.br/formacao-html-css" target="_blank">[Alura]</a></li>
+                    <li>IT Essencials 7.01 <a class="certificados" href="./assets/Certificado-ITE-Cisco.pdf" target="_blank">[Cisco]</a></li>
+                    <li>Inglês: Avançado <a class="certificados" href="" target="_blank">[TOEIC Certificate]</a></li>
                 </ul>
             </div>
         </div>
@@ -125,5 +122,16 @@
             </div>
         </div>
     </section>
+
+    <!-- <section class="terceira-secao">
+        <h6 class="titulo-sobre-mim">Meus Projetos</h6>
+        <div class="container-tecnologias sobre">
+            <div class="tecnologias">
+                <div class="habilidade">
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
 </body>
 </html>

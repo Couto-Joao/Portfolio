@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--main-font);
     background-color: var(--bg-color);
@@ -48,6 +52,11 @@ body {
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     animation: piscar 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.botao-curriculo:hover {
+    transform: scale(1.05);
 }
 
 @keyframes piscar {
@@ -63,9 +72,14 @@ body {
 }
 
 .nav-links a {
+    text-decoration: none;
     font-size: 18px;
     color: var(--font-color);
     cursor: pointer;
+}
+
+.links:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -109,8 +123,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 3px solid var(--3-bg-color);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px var(--3-bg-color), 0 0 25px var(--3-bg-color);
 }
 
 .icons {
@@ -122,11 +135,11 @@ body {
 }
 
 .apresentacao {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .titulo-nome {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -145,15 +158,15 @@ body {
 }
 
 .botao-contrate:hover {
-  transform: scale(1.1); 
+  transform: scale(1.05); 
 }
 
 /* segunda página */
-.secao-consolidada {
+.segunda-secao {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin: 3% 5%;
+    padding: 3% 5%;
     width: 90%;
 }
 
@@ -171,6 +184,12 @@ body {
     border-radius: 10px;
     padding: 2%;
     gap: 1rem;
+    transition: box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.sobre:hover {
+    border: 1px solid var(--3-bg-color);
+    box-shadow: 0 0 10px var(--3-bg-color), 0 0 20px var(--3-bg-color);
 }
 
 .sobre-mim {
@@ -185,6 +204,15 @@ body {
     justify-content: space-between;
     gap: 40px;
     height: 13rem;
+}
+
+.certificados {
+    color: #447D9B;
+    text-decoration: none;
+}
+
+.certificados:hover {
+    text-decoration: underline;
 }
 
 .container-tecnologias {
@@ -234,8 +262,10 @@ body {
 }
 
 .habilidade:hover {
+    background-color: #D7D7D7;
     transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .habilidade img {
@@ -243,4 +273,13 @@ body {
     height: 70px;
     margin-bottom: 10px;
     object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+/* terceira seção */
+.terceira-secao {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3% 5%;
+    width: 90%;
 }
